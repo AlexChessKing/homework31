@@ -19,6 +19,10 @@ public class Person {
             throw new IllegalStateException("Возраст уже задан!");
         }
 
+        if (age < 0 || age > 130) {
+            throw new IllegalArgumentException("Возраст введен некорректно!");
+        }
+
         if (age > 0) {
             isAge = true;
             this.age = age;

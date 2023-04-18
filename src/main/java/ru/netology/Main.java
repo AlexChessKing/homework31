@@ -16,20 +16,6 @@ public class Main {
 
         System.out.println("У " + mom + " есть сын, " + son);
 
-//        try {
-//            // не хватает обязательных полей
-//            new PersonBuilder().build();
-//        } catch (IllegalStateException e) {
-//            e.printStackTrace();
-//        }
-//
-//        try {
-//            // недопустимый возраст
-//            new PersonBuilder().setAge(-100).build();
-//        } catch (IllegalArgumentException e) {
-//            e.printStackTrace();
-//        }
-
         mom.happyBirthday();
         System.out.println(mom);
 
@@ -39,7 +25,7 @@ public class Main {
         son.happyBirthday();
         System.out.println(son);
 
-        mom.setAge(40);
-        System.out.println(mom);
+//        mom.setAge(40);
+//        System.out.println(mom);
     }
 }
